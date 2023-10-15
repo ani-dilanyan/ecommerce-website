@@ -2,10 +2,6 @@ body{
 	background-color: hsl(0, 0%, 98%);
 }
 
-h1,h2,h3,h4,h5,h6{
-	color:hsl(0, 0%, 30%);
-}
-
 .box-element{
 	box-shadow:hsl(0, 0%, 80%) 0 0 16px;
 	background-color: #fff;
@@ -35,22 +31,20 @@ h1,h2,h3,h4,h5,h6{
 }
 
 #cart-total{
-	display: block;
+	display: inline;
 	text-align: center;
 	color:#fff;
-	background-color: red;
+	background-color: rgb(10, 177, 35);
 	width: 20px;
-	height: 25px;
+	height: 20px;
 	border-radius: 50%;
 	font-size: 14px;
+	padding: 5px;
+	margin: 5px;
 }
 
 .col-lg-4, .col-lg-6, .col-lg-8, .col-lg-12{
 	margin-top: 10px;
-}
-
-.btn{
-	border-radius: 0;
 }
 
 .row-image{
@@ -91,7 +85,6 @@ h1,h2,h3,h4,h5,h6{
 .chg-quantity:hover{
 	opacity: .6;
 }
-
 
 .hidden{
 	display: none!important;
