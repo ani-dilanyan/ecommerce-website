@@ -3,7 +3,7 @@ from django.http import JsonResponse, HttpResponse
 import json
 import datetime
 from .models import * 
-from .utils import cookieCart, cartData, guestOrder
+from .utils import cartData, guestOrder
 
 def store(request):
 	data = cartData(request)
@@ -87,7 +87,7 @@ def processOrder(request):
 		zipcode=data['shipping']['zipcode'],
 		)
 
-	return JsonResponse('Payment submitted..', safe=False)
+	return JsonResponse('Order created successfully...', safe=False)
 
 def login(request):
 	return HttpResponse(" ") 
